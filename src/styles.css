@@ -8,32 +8,82 @@ body {
   font-size: 14px;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
-}
-
-div li {
-  display: flex;
-  align-items: center;
-}
-
-div li + li {
-  margin-top: 15px;
-}
-
 button {
   background: #7159c1;
   color: #fff;
   border: 0;
   padding: 10px 15px;
   cursor: pointer;
-  margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  cursor: pointer;
 }
 
-div li button {
-  margin: 0 15px;
-  background: #ca4949;
+
+input, button {
+  font: 400 14px Roboto, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .content {
+  width: 100%;
+  padding: 96px;
+  background: #f0f0f5;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container .content form {
+  width: 100%;
+  max-width: 380px;
+}
+
+.container .content form input {
+  width: 100%;
+  height: 60px;
+  color: #333333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.container .content form input + input {
+  margin-top: 8px;
+}
+
+.container .content form .actions{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.container .content ul {
+  width: 100%;
+  max-width: 450px;;
+}
+
+.container .content ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #fff;
+  padding: 5px;
+}
+
+.container .content ul li button {
+  background-color: #ca4949;
 }
